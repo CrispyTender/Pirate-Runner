@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://vey0kod1kl2i"]
+
+[ext_resource type="Texture2D" uid="uid://ddogq6ka6r7ws" path="res://assets/background/ParallaxBGsky.png" id="1_anprf"]
+
+[node name="BG" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.903125, 0.754167)
+texture = ExtResource("1_anprf")
+centered = false
