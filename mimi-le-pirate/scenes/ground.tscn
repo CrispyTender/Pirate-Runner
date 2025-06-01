@@ -2,15 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://cootj08a3bv0a" path="res://assets/background/floor.png" id="1_pybca"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi8v4"]
-size = Vector2(2617, 41)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pybca"]
+size = Vector2(2312, 41)
 
-[node name="floor" type="StaticBody2D"]
+[node name="Ground" type="StaticBody2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1309, 597)
+[node name="Floor" type="Sprite2D" parent="."]
+position = Vector2(1152, 600)
 texture = ExtResource("1_pybca")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1307.5, 620.5)
-shape = SubResource("RectangleShape2D_mi8v4")
+position = Vector2(1156, 628.5)
+shape = SubResource("RectangleShape2D_pybca")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://d3th8fbu5qao"]
+[gd_scene load_steps=42 format=3 uid="uid://d3th8fbu5qao"]
 
 [ext_resource type="Script" uid="uid://dxgb37tpx6chy" path="res://scenes/pirate.gd" id="1_1ojc6"]
 [ext_resource type="Texture2D" uid="uid://chlxaogck4vnm" path="res://assets/spritesheets/PirateSheet.png" id="1_wpigy"]
@@ -18,6 +18,10 @@ region = Rect2(780, 1040, 260, 260)
 [sub_resource type="AtlasTexture" id="AtlasTexture_wwv7i"]
 atlas = ExtResource("1_wpigy")
 region = Rect2(1040, 1040, 260, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ojc6"]
+atlas = ExtResource("1_wpigy")
+region = Rect2(260, 1040, 260, 260)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l86y0"]
 atlas = ExtResource("1_wpigy")
@@ -158,6 +162,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wwv7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ojc6")
 }],
 "loop": true,
 "name": &"JumpAnim",
@@ -268,7 +275,7 @@ animations = [{
 size = Vector2(88, 232)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_opjto"]
-size = Vector2(101, 203)
+size = Vector2(140, 177)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t2je3"]
 size = Vector2(213.5, 126)
@@ -288,7 +295,7 @@ position = Vector2(312, 423)
 shape = SubResource("RectangleShape2D_64y74")
 
 [node name="jump col" type="CollisionShape2D" parent="."]
-position = Vector2(320.5, 429.5)
+position = Vector2(318, 397.5)
 shape = SubResource("RectangleShape2D_opjto")
 
 [node name="slide col" type="CollisionShape2D" parent="."]
